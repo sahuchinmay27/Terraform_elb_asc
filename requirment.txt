@@ -1,0 +1,41 @@
+Please Download & extract zip file of terraform in your local machine
+After extract , add to system variable.
+
+Go to Newly created terraform project diectory
+Run command 
+     "terraform init" 
+     command is used to initialize a working directory containing Terraform configuration files.
+Once your .tf file is ready for deploy
+
+Run command :
+      "terraform validate"
+      command validates the configuration files in a directory, referring only to the configuration 
+      and not accessing any remote services such as remote state, provider APIs, etc.
+Once validate successfully then,
+
+Run command :
+       "terraform plan"
+       command creates an execution plan, which lets you preview the changes that Terraform
+       plans to make to your infrastructure.
+
+After that Run command :
+        " terraform apply"
+        command executes the actions proposed in a Terraform plan.
+
+There are many command which help 
+
+export AWS_ACCESS_KEY_ID=*******
+export AWS_SECRET_ACCESS_KEY=*********
+terraform plan
+terraform console
+terraform apply -refresh=false
+terraform plan -out iam.tfplan
+terraform apply "iam.tfplan"
+terraform apply -target=aws_iam_user.my_iam_user
+terraform destroy
+terraform validate
+terraform fmt
+terraform show
+
+
+
